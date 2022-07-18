@@ -9,7 +9,9 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .container {
@@ -17,6 +19,7 @@ main {
     width: 870px;
     padding: 30px;
     border-radius: 5px;
+    margin-top: 21px;
 }
 
 hr {
@@ -92,4 +95,88 @@ hr {
     text-decoration: none;
     font-size: 16px;
     color: #562EFF;
+}
+
+
+
+/* Courses style */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+}
+
+.course {
+    width: 270px;
+    box-shadow: 2px 2px 2px 1px rgba(119, 119, 119, 0.124);
+    /* border: 1px solid blue; */
+    border-radius: 15px;
+}
+
+.course-banner img {
+    width: 250px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.course-title {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #1e1e1e;
+    margin-left: 10px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.course-info p {
+    font-size: 15px;
+    color: #a2a2a2;
+}
+
+.course-author {
+    color: #ED6B4F;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.filled-star {
+    color: #FFC014;
+}
+
+.empty-star {
+    color: #AEAEAE;
+    opacity: 25%;
+}
+
+.course-duration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95px;
+    height: 30px;
+    margin-right: 12px;
+    background-color: #FFE4E8;
+    border-radius: 15px;
+}
+
+.course-duration span {
+    color: #FF4A60;
+    font-size: 14px;
+}
+
+.fa-clock {
+    color: #FF4A60;
+    width: 20px;
 }
